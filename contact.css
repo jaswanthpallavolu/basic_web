@@ -1,0 +1,46 @@
+.m_blk{
+	padding: 20px;
+	background-color:  #AED6F1;
+	position: relative;
+	animation: my1 2s 1;
+  	animation-direction: normal;
+  	border-radius: 20px;
+  	margin-top: 60px;
+  	width:100%;
+
+}
+.hbar{
+  background-color: #1B2631;
+  font-size: 20px;
+}   
+
+.hdr{
+	background-image: url(cc1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width:auto;
+	height:300px;
+
+}
+ 
+.card{
+	width:120px;
+	height:400px;
+	margin-top: 40px; 
+	background-color: #2C3E50;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-left-width: 5px; 
+	border-right-width: 5px;
+	border-color: white;
+	border-top-width: 5px;
+	width:100%;
+}
+body{
+	 background-color:#FDF2E9;}
+
+
+@keyframes my1 {
+  0%   {background-color:#21618C;left: 0px; top: -800px;}
+  100%  { left: 0px; top: 0px;}
+}

@@ -1,0 +1,46 @@
+.heading{
+	font-size: 150px;
+	position: relative;
+ 	animation: my2 2s 1;
+ 	color: #2C3E50;
+ 	animation-direction: normal;
+
+}
+.hbar{
+  background-color: #1B2631;
+  font-size: 20px;
+}   
+
+.photo img{
+	 padding: 50px;
+	 align-items: center;
+	 margin-left: auto;
+	 margin-right: auto;
+
+}
+.photo{
+	background-color:#EBF5FB;
+}
+.mainphoto
+{
+  position: relative;
+  animation: my1 2s 1;
+  animation-direction: normal;
+  border-color: #2C3E50;
+}
+.ab{
+	background-color: #76D7C4;
+	color: #1B2631;
+}
+p{
+	color:#2C3E50 ;
+}
+
+@keyframes my1 {
+  0%   { left: 0px; top: 500px;}
+  100%  { left: 0px; top: 0px;}
+}
+@keyframes my2 {
+  0%   { left: 700px; top: 0px;}
+  100%  { left: 0px; top: 0px;}
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+	.cont{
+		 
+		padding: 20px;
+		border-style: solid;
+		border-color: red;
+		border-radius: 20px;
+		width:100%;
+	}
+	.question
+	{
+		padding: 10px;
+		border-style: solid;
+		border-color: yellow;
+		 
+
+	}
+	.option
+	{
+		padding: 10px;
+		height: 120px;
+		border-style: solid;
+		border-color: green;
+		 
+	}
+	.btn-success
+	{
+		width:200px;
+
+		 
+		 
+	}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$(".option").slideUp("fast");
+		$("#h").hide();
+		$("#h").text("^");
+		$("#s").text("-");
+
+		$("#h").click(function(){
+			$(".option").slideUp("slow");
+			$("#s").show()
+			$("#h").hide()
+		});
+
+		$("#s").click(function(){
+			$(".option").slideDown("slow");
+			$("#s").hide()
+			$("#h").show();
+			 
+		});
+
+
+		$("#crt").click(function(){
+			$("#crt").css("background-color","green");
+		});
+		$("#wrg").click(function(){
+			$("#wrg").css("background-color","red");
+		});
+
+
+
+	});
+</script>
+
+
+<body>
+	<div class="container-fluid">
+		<h1>Question:</h1>
+		<div class="row">
+		<div class=" col-sm-4 cont">
+
+			<!--Question-->
+			<div class="question">
+				<div class="row">
+					<!--Enter ques-->
+					<div class="col-sm-10">
+						<p></p>
+					</div><!--/Enter ques-->
+					<div class="col-sm-2">
+						<button id ="s" class="btn-dark"></button>
+						<button id ="h" class="btn-dark"></button>
+					</div>
+				</div>
+
+		</div> <!--/Question-->
+			 
+			<!--Answers---> 
+			<div class="option">
+				<p id="opts">
+					<button class="btn-default" id="wrg">op1</button>
+					<button class="btn-default" id="wrg">op1</button>
+					<br><br>
+					<button class="btn-default" id="crt">op1</button>
+					<button class="btn-default" id="wrg">op1</button></p>		
+				 
+			</div>	<!--/Answers---> 
+
+		</div>
+		
+		</div>
+	</div>
+</body>
+</html>

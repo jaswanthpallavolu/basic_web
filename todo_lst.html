@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To_do_list</title>
+	
+</head>
+<body>
+
+	<script type="text/javascript">
+		var list_box = ['Power on','Enter pswd to login'];
+
+		function add_item(){
+			var a = document.getElementById('ip').value;
+			list_box.push(a);
+			displayitem(a);
+			document.getElementById('ip').value = '';
+		}
+	</script>
+
+	
+	<div id ="content" style="margin-left:40%;margin-top:10%;align-content: center;">
+		<input type="text" id="ip">
+		<button onclick="add_item()">ADD</button>
+		<h1>My List ToDo:</h1>
+		<ul>
+			<script type="text/javascript">
+				list_box.forEach(displayitem);
+
+				function displayitem(item)
+				{
+					document.getElementById("content").innerHTML +="<li>"+item+"</li>";
+					
+					
+				}
+
+			</script>
+		</ul>
+
+
+		
+	</div>
+
+</body>
+</html>

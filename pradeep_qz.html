@@ -1,0 +1,70 @@
+<html>  
+<head>
+<style>
+ 
+.center {
+  
+  position: absolute;
+  top: 35%;
+  margin-left:50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.container { 
+  height: 150px;
+  width: 500px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+    
+  
+
+  
+</style>
+<SCRIPT>
+
+function ShowAndHide() {
+    var x = document.getElementById('SectionName');
+    var y =document.getElementById('ch'); 
+    if (x.style.display == 'none') {
+        x.style.display = 'table';
+    } else {
+        x.style.display = 'none';
+    }
+    if (y.value == 'Click to Answer') {
+        y.value = 'Click to hide';
+    } else {
+        y.value = 'Click to Answer';
+    }
+}
+
+</SCRIPT>  
+</head>
+<body>  
+ 
+<table class="center">  
+<tr>
+<th><div class="container"><div class="center">QUESTION</div></div></th>
+
+
+<tr>
+<td><input type="button" value="Click to Answer" style="float: right;" onclick="ShowAndHide()" id="ch">
+</td>
+</tr>
+<tr>
+<td>
+<table style="border:1px solid blue;width:500px;height:100px;display:none" id='SectionName'>
+<tr>
+<td  align="center"><input type="button" value="OPTION A"></td>
+<td  align="center"><input type="button" value="OPTION B"></td></tr>
+<tr><td  align="center"><input type="button" value="OPTION C"></td><td  align="center"><input type="button" value="OPTION D"></td></tr>
+</tr>
+</table>
+</td>
+</tr>
+
+</table>
+  
+</body>
+</html>
